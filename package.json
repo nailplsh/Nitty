@@ -1,0 +1,18 @@
+{
+  "name": "nitty",
+  "version": "0.0.2",
+  "description": "Utility bot made by hazelnitwit#0001",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hazelnitwit",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.32.0"
+  }
+}

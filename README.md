@@ -16,4 +16,4 @@ Email: hazel@thenitwit.xyz
 
 Discord: hazelnitwit#0001 OR https://discord.gg/zV4KuWMCzx (my bot development server)
 
-(Always preface that you are from GitHub, please)
+(Always preface that you are from GitHub if you are approaching me via email or my personal Discord rather than the server.)

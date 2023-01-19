@@ -8,6 +8,8 @@ The bot utilizes discord.js version 14.7.1 and the project is linted using ESLin
 
 (Please note that a default `.eslintrc.json` file is NOT included, and be warned that my code is nowhere near easily readable)
 
+Packages are compiled using `npm pack` and can be initialized using `npm init`
+
 This is my first project involving JS in many years, so I am rusty, and there will likely be many revisions and commits.
 
 To contact me, you can:

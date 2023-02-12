@@ -5,6 +5,6 @@ module.exports = {
 		.setName('cashews')
 		.setDescription('Information related to cashewsarenice.'),
 	async execute(interaction) {
-		await interaction.reply('Cashews - HAZiY Member - https://twitch.tv/cash3wsarenice9982');
+		await interaction.reply('Cashews - Collaborator - https://twitch.tv/cash3wsarenice9982');
 	},
 };

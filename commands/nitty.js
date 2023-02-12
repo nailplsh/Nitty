@@ -5,6 +5,6 @@ module.exports = {
 		.setName('nitty')
 		.setDescription('Information related to Nitty.'),
 	async execute(interaction) {
-		await interaction.reply('Nitty was made by hazelnitwit#0001 for use in HAZiY.');
+		await interaction.reply('Nitty was made by hazelnitwit#0001 for use in Hazel\'s Hellhole.');
 	},
 };

@@ -3,8 +3,8 @@ const { SlashCommandBuilder } = require('discord.js');
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('haziy')
-		.setDescription('Infromation related to HAZiY Live.'),
+		.setDescription('Information related to Hazel\'s creator, haziy.'),
 	async execute(interaction) {
-		await interaction.reply('HAZiY was created by hazelnitwit, cashewsarenice, and RenVTube on January 12th, 2023.\nFor more information, visit https://haziy.live or contact Hazel at hazelnitwit#0001.');
+		await interaction.reply('HAZiY was originally a collab group, but now refers to Hazel\'s creator.\nTo contact haziy for professional purposes, go to https://twitter.com/BeHaziy');
 	},
 };

@@ -3,9 +3,10 @@ const path = require('node:path');
 // Require the necessary discord.js classes
 // const dotenv = require('dotenv');
 // dotenv.config();
-const { token } = require('./config.json');
 
-const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
+const { token } = require('./config.json');
+const { Client, Collection, Events, GatewayIntentBits, REST, Routes } = require('discord.js');
+const rest = new REST({ version: '10' }).setToken(token);
 
 // Create a new client instance
 const client = new Client({
@@ -37,6 +38,19 @@ for (const file of commandFiles) {
 
 client.once(Events.ClientReady, c => {
 	console.log(`Nitty is logged in as ${c.user.tag} with id ${c.user.id}`);
+	(async () => {
+		console.log(`Nitty is refreshing application (/) commands.`);
+		try{
+			// Refreshes all commands globally -> https://discordjs.guide/creating-your-bot/command-deployment.html#global-commands
+			const data = await rest.put(
+				Routes.applicationCommands(c.user.id),
+				{ body: client.commands.map(command => command.data.toJSON()) },
+			);
+			console.log(`Nitty successfully reloaded ${data.length} application (/) commands.`);
+		}catch(error){
+			console.error(error);
+		}
+	})();
 });
 
 

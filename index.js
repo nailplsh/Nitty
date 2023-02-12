@@ -1,12 +1,13 @@
 const fs = require('node:fs');
 const path = require('node:path');
+require('dotenv').config();
 // Require the necessary discord.js classes
 // const dotenv = require('dotenv');
 // dotenv.config();
 
-const { token } = require('./config.json');
+const { TOKEN } = process.env;
 const { Client, Collection, Events, GatewayIntentBits, REST, Routes } = require('discord.js');
-const rest = new REST({ version: '10' }).setToken(token);
+const rest = new REST({ version: '10' }).setToken(TOKEN);
 
 // Create a new client instance
 const client = new Client({
@@ -14,9 +15,9 @@ const client = new Client({
 		GatewayIntentBits.Guilds,
 		GatewayIntentBits.GuildMessages,
 		GatewayIntentBits.MessageContent,
-        GatewayIntentBits.GuildMessageReactions,
+		GatewayIntentBits.GuildMessageReactions,
 		GatewayIntentBits.GuildMembers,
-        GatewayIntentBits.GuildMessages,
+		GatewayIntentBits.GuildMessages,
 	],
 });
 // slash commands
@@ -72,4 +73,4 @@ client.on(Events.InteractionCreate, async interaction => {
 	}
 });
 
-client.login(token);
+client.login(TOKEN);

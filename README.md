@@ -1,4 +1,4 @@
-# Nitty
+# Nitty - simple discord.js bot
 ### Nitty, the discord utility bot
 ### Made for the HAZiY VTuber group, by hazelnitwit
 

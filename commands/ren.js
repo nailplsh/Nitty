@@ -5,6 +5,6 @@ module.exports = {
 		.setName('ren')
 		.setDescription('Infromation related to renvtube.'),
 	async execute(interaction) {
-		await interaction.reply('Ren - VTuber - 🎮 - https://twitch.tv/renvtube');
+		await interaction.reply({ content: 'Ren - VTuber - 🎮 - https://twitch.tv/renvtube', ephemeral: true });
 	},
 };

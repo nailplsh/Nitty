@@ -1,6 +1,6 @@
 {
 	"name": "nitty",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Utility bot made by haziy#0001",
 	"main": "index.js",
 	"dependencies": {

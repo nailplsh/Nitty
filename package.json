@@ -1,7 +1,7 @@
 {
 	"name": "nitty",
-	"version": "0.0.2",
-	"description": "Utility bot made by hazelnitwit#0001",
+	"version": "0.0.3",
+	"description": "Utility bot made by haziy#0001",
 	"main": "index.js",
 	"dependencies": {
 		"discord.js": "^14.7.1",
@@ -28,5 +28,5 @@
 	"bugs": {
 		"url": "https://github.com/hazelnitwit/Nitty/issues"
 	},
-	"homepage": "https://github.com/hazelnitwit/Nitty#readme"
+	"homepage": "https://nitty.vercel.app"
 }

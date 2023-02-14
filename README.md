@@ -1,8 +1,6 @@
-# Nitty - simple discord.js bot
+# Nitty - simple discord.js utility bot
 
-### Nitty, the discord utility bot
-
-### Made for the hazelnitwit and his collaborators
+> Made for hazelnitwit and his collaborators, built to act as an example bot
 
 More info: https://nitty.vercel.app
 

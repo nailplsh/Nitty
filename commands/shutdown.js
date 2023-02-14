@@ -7,7 +7,7 @@ module.exports = {
 		.setDescription('Only the server owner can do this.'),
 		async execute(interaction) {
 			if (interaction.guild.ownerId !== interaction.member.id) {
-				interaction.reply('Sorry, you must be the owner of this server.').then(() => {
+				interaction.reply({ content: 'Sorry, you must be the owner of this server.', ephemeral: true }).then(() => {
 					console.log(`${interaction.member.displayName} tried to shut down the bot. ID: ${interaction.user.id}`);
 					return;
 				});

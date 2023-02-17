@@ -2,7 +2,7 @@
 	"name": "nitty",
 	"version": "0.0.3",
 	"description": "Utility bot made by haziy#0001",
-	"main": "index.js",
+	"main": "src/index.ts",
 	"dependencies": {
 		"discord.js": "^14.7.1",
 		"dotenv": "^16.0.3"
@@ -11,8 +11,10 @@
 		"eslint": "^8.32.0"
 	},
 	"scripts": {
-		"start": "node index.js",
-		"dev": "nodemon index.js",
+		"ts-dev": "nodemon --exec ts-node src/index.ts",
+		"ts-start": "ts-node src/index.ts",
+		"lint": "eslint .",
+
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {

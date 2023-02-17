@@ -5,7 +5,8 @@
 	"main": "src/index.ts",
 	"dependencies": {
 		"discord.js": "^14.7.1",
-		"dotenv": "^16.0.3"
+		"dotenv": "^16.0.3",
+		"ts-node": "^10.9.1"
 	},
 	"devDependencies": {
 		"eslint": "^8.32.0"
@@ -14,7 +15,6 @@
 		"ts-dev": "nodemon --exec ts-node src/index.ts",
 		"ts-start": "ts-node src/index.ts",
 		"lint": "eslint .",
-
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {

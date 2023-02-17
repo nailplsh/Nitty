@@ -1,0 +1,104 @@
+body {
+    background-color: #3AAFA9;
+    overflow: hidden; /* hide scrollbars */
+}
+h1 {
+    color: #17252A;
+    text-decoration: underline;
+    font-weight: bold;
+}
+p {
+    color: #17252A;
+    font-size: 20px;
+}
+a {
+    color: #2b454f;
+}
+#footer {
+    /* center text inside horizontally and vertically */
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    height: 30px;
+    background-color: #2B7A78;
+    color: #17252A;
+}
+
+#image {
+
+}
+
+/* temp ignore past here */
+
+@-webkit-keyframes social-logo {
+    16.65% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+    33.3% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+    49.95% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    66.6% {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateY(1px);
+      transform: translateY(1px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  @keyframes social-logo {
+    16.65% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+    33.3% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+    49.95% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    66.6% {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateY(1px);
+      transform: translateY(1px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  .social-logo {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .social-logo:hover, .social-logo:focus, .social-logo:active {
+    -webkit-animation-name: social-logo;
+    animation-name: social-logo;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }

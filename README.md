@@ -20,7 +20,7 @@ npm install -g ts-node
 // Once you installed it, you can run the bot with
 npm run dev
 // or
-npm run start
+npm run prod
 ```
 
-The difference between the two is that `npm run ts-dev` will restart the bot when you make changes to the code, while `npm run ts-start` will not.
+The difference between the two is that `npm run dev` will restart the bot when you make changes to the code, while `npm run prod` will not.

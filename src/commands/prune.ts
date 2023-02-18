@@ -1,7 +1,6 @@
 import {
     CommandInteraction,
     GatewayIntentBits,
-    PermissionResolvable,
     PermissionsBitField,
     SlashCommandBuilder,
     TextBasedChannelFields

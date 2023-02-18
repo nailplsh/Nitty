@@ -1,21 +1,23 @@
-# Nitty - simple discord.js bot
-### Nitty, the discord utility bot
-### Made for the hazelnitwit and his collaborators
+# Nitty - simple discord.js utility bot
 
-[This bot and it's code are NOT guaranteed for use outside of hazelnitwit's umbrella. Be warned.]
+> Made for hazelnitwit and his collaborators, built to act as an example bot
 
-The bot utilizes discord.js version 14.7.1 and the project is linted using ESLint version 8.32.0 
+More info: https://nitty.vercel.app
 
-(Please note that a default `.eslintrc.json` file is NOT included, and be warned that my code is nowhere near easily readable)
+## How do I use it?
 
-Packages are compiled using `npm pack` and can be initialized using `npm init`
+1. Install dependencies
 
-This is my first project involving JS in many years, so I am rusty, and there will likely be many revisions and commits.
+```bash
+npm install
+```
 
-To contact me, you can:
+2.  Run one of the following commands to start the bot:
 
-Email: hazel@thenitwit.xyz
+```bash
+npm run ts-dev
+// or
+npm run ts-start
+```
 
-Discord: hazelnitwit#0001 OR https://discord.gg/zV4KuWMCzx (my bot development server)
-
-(Always preface that you are from GitHub if you are approaching me via email or my personal Discord rather than the server.)
+The difference between the two is that `npm run ts-dev` will restart the bot when you make changes to the code, while `npm run ts-start` will not.

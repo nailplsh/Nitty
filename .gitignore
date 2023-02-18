@@ -1,4 +1,7 @@
+build
 node_modules
 config.json
 .eslintrc.json
 package-lock.json
+*.env
+**/.env

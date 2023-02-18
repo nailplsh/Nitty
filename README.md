@@ -14,10 +14,13 @@ npm install
 
 2.  Run one of the following commands to start the bot:
 
+Before running, you have to install the global dependency `ts-node`
 ```bash
-npm run ts-dev
+npm install -g ts-node
+// Once you installed it, you can run the bot with
+npm run dev
 // or
-npm run ts-start
+npm run start
 ```
 
 The difference between the two is that `npm run ts-dev` will restart the bot when you make changes to the code, while `npm run ts-start` will not.

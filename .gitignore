@@ -1,7 +1,7 @@
 build
 node_modules
 config.json
-.eslintrc.json
+.eslintrc.cjs
 package-lock.json
 *.env
 **/.env

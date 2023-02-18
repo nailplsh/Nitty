@@ -1,6 +1,5 @@
 import {
     CommandInteraction,
-    GatewayIntentBits,
     PermissionsBitField,
     SlashCommandBuilder,
     TextBasedChannelFields
@@ -23,7 +22,7 @@ module.exports = {
             if (!(interaction.member?.permissions as Readonly<PermissionsBitField>).has(PermissionsBitField.Flags.ManageMessages)) {
                 return interaction.reply({ content: 'You do not have permission to use this command.', ephemeral: true });
             }
-        }catch(error: any){
+        }catch(error: unknown){
             console.error(error);
             return interaction.reply({ content: 'There was an error trying to prune messages in this channel!', ephemeral: true });
         }

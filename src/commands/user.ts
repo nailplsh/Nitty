@@ -6,7 +6,6 @@ module.exports = {
         .setDescription('Provides information about the user.')
         .addUserOption(option => option.setName('target').setDescription('The user\'s information you want to get')),
     async execute(interaction: CommandInteraction) {
-        const member = interaction.member as GuildMember;
         const user = interaction.options.getUser('target') ?? interaction.user;
         const memberTarget = interaction.guild?.members.cache.get(user.id) as GuildMember;
 

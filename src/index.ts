@@ -1,7 +1,7 @@
 ///
 /// Importing all the dependencies
 ///
-import { Collection, Events, GatewayIntentBits, REST, Routes } from 'discord.js';
+import { GatewayIntentBits } from 'discord.js';
 import ClientClass from './structs/clientClass';
 
 /// Clearing the console

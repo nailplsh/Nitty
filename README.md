@@ -15,9 +15,9 @@ npm install
 2.  Run one of the following commands to start the bot:
 
 ```bash
-npm run dev
+npm run ts-dev
 // or
-npm run start
+npm run ts-start
 ```
 
-The difference between the two is that `npm run dev` will restart the bot when you make changes to the code, while `npm run start` will not.
+The difference between the two is that `npm run ts-dev` will restart the bot when you make changes to the code, while `npm run ts-start` will not.

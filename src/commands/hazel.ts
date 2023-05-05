@@ -19,7 +19,7 @@ module.exports = {
             .setTitle('Hazel the Nitwit')
             .setURL("https://github.com/hazelnitwit")
             .setColor('#a8715a')
-            .setDescription(`Hazel aka Hazxl is a content creator and developer, and is the original creator of this Bot.
+            .setDescription(`Hazel aka hazxl is a content creator and developer, and is the original creator of this Bot.
             \n**Creator Info**:
             Fandom Name: Nitwits
             Oshi Mark: 🤎🌰🤎

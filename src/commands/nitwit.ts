@@ -8,32 +8,32 @@ async function getGithubInfos(username: string) {
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('hazel')
+        .setName('nitwit')
         .setDescription('Sends information about Hazel the Nitwit.'),
 
 
     async execute(interaction: CommandInteraction) {
-        const githubInfos = await getGithubInfos('hazelnitwit').then(res => res.data)
+        const githubInfos = await getGithubInfos('nitwithazel').then(res => res.data)
 
         const embed = new EmbedBuilder()
             .setTitle('Hazel the Nitwit')
-            .setURL("https://github.com/hazelnitwit")
+            .setURL("https://github.com/nitwithazel")
             .setColor('#a8715a')
-            .setDescription(`Hazel aka hazxl is a content creator and developer, and is the original creator of this Bot.
+            .setDescription(`Hazel the Nitwit is a content creator and programmer, and is the original creator of this Bot.
             \n**Creator Info**:
             Fandom Name: Nitwits
-            Oshi Mark: 🤎🌰🤎
+            Oshi Mark: 🌰😂🌰
             Timezone: America/Toronto (ET)
             \n**My Links**:
-            Twitter: https://twitter.com/hazelnitwit
-            Twitch: https://twitch.tv/hazelnitwit
+            Twitter: https://twitter.com/nitwithazel
+            Twitch: https://twitch.tv/nitwithazel
             VStream: https://vstream.com/c/@hazel
-            Other Links: https://hazelnitwit.carrd.co
+            Other Links: https://nitwithazel.carrd.co
             \n**Github Stats**:
             Public repos: ${githubInfos.public_repos}
             Followers: ${githubInfos.followers}
-            \n**Github**: https://github.com/hazelnitwit
-            **Discord**: hazxl#0001`)
+            \n**Github**: https://github.com/nitwithazel
+            **Discord**: nitwit#0001`)
             .setThumbnail(`https://avatars.githubusercontent.com/u/${githubInfos.id}?v=4`)
 
         return await interaction.reply({

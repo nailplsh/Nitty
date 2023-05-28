@@ -13,17 +13,17 @@ module.exports = {
 
 
     async execute(interaction: CommandInteraction) {
-        const githubInfos = await getGithubInfos('LagKnowsWhy').then(res => res.data)
+        const githubInfos = await getGithubInfos('0x796935').then(res => res.data)
 
         const embed = new EmbedBuilder()
-            .setTitle('Yi5')
-            .setURL("https://github.com/LagKnowsWhy")
+            .setTitle('Yi5 aka 0x796935')
+            .setURL("https://github.com/0x796935")
             .setColor('#0099ff')
             .setDescription(`Yi5 is a bot developer, and a contributor of this Bot.
             \n**Github Stats**:
             Public repos: ${githubInfos.public_repos}
             Followers: ${githubInfos.followers}
-            \n**Github**: https://github.com/LagKnowsWhy
+            \n**Github**: https://github.com/0x796935
             **Discord**: yi5#1057`)
             .setThumbnail(`https://avatars.githubusercontent.com/u/${githubInfos.id}?v=4`)
 

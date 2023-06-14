@@ -10,7 +10,7 @@ module.exports = {
     async execute(interaction: CommandInteraction) {
 
         const embed = new EmbedBuilder()
-            .setTitle('Ren')
+            .setTitle('Cashews')
             .setURL("https://twitch.tv/cash3wsarenice9982")
             .setColor('#b3005a')
             .setDescription(`Cashews is an associated content creator.

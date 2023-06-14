@@ -24,7 +24,7 @@ module.exports = {
             Public repos: ${githubInfos.public_repos}
             Followers: ${githubInfos.followers}
             \n**Github**: https://github.com/0x796935
-            **Discord**: yi5#1057`)
+            **Discord**: yi5`)
             .setThumbnail(`https://avatars.githubusercontent.com/u/${githubInfos.id}?v=4`)
 
         return await interaction.reply({

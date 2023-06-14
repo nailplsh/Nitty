@@ -1,6 +1,6 @@
 # Nitty - simple discord.js utility bot
 
-> Made for Hazel the Nitwit and his collaborators, built to act as an example bot
+> Made for Nitwit and his collaborators, built to act as an example bot
 
 More info: https://nitty.vercel.app
 

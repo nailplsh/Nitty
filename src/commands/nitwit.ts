@@ -9,31 +9,31 @@ async function getGithubInfos(username: string) {
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('nitwit')
-        .setDescription('Sends information about Hazel the Nitwit.'),
+        .setDescription('Sends information about Nitwit.'),
 
 
     async execute(interaction: CommandInteraction) {
         const githubInfos = await getGithubInfos('nitwithazel').then(res => res.data)
 
         const embed = new EmbedBuilder()
-            .setTitle('Hazel the Nitwit')
+            .setTitle('Nitwit')
             .setURL("https://github.com/nitwithazel")
             .setColor('#a8715a')
-            .setDescription(`Hazel the Nitwit is a content creator and programmer, and is the original creator of this Bot.
+            .setDescription(`Nitwit is a content creator and programmer, and is the original creator of this Bot.
             \n**Creator Info**:
             Fandom Name: Nitwits
             Oshi Mark: 🌰😂🌰
             Timezone: America/Toronto (ET)
             \n**My Links**:
-            Twitter: https://twitter.com/nitwithazel
+            Twitter: https://twitter.com/techynitwit
             Twitch: https://twitch.tv/nitwithazel
             VStream: https://vstream.com/c/@hazel
-            Other Links: https://nitwithazel.carrd.co
+            Other Links: https://techynitwit.carrd.co
             \n**Github Stats**:
             Public repos: ${githubInfos.public_repos}
             Followers: ${githubInfos.followers}
             \n**Github**: https://github.com/nitwithazel
-            **Discord**: nitwit#0001`)
+            **Discord**: nit.wit (old: nitwit#0001)`)
             .setThumbnail(`https://avatars.githubusercontent.com/u/${githubInfos.id}?v=4`)
 
         return await interaction.reply({

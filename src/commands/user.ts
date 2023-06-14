@@ -13,7 +13,7 @@ module.exports = {
             .setColor('#0099ff')
             .setTitle('User Info')
             .setAuthor({name: user.username, iconURL: user.displayAvatarURL()} as EmbedAuthorOptions)
-            .setDescription(`**Username**: ${user.username}\n**ID**: ${user.id}\n**Joined Server**: ${memberTarget.joinedAt}\n**Joined Discord**: ${user.createdAt}\n**Roles**: ${memberTarget.roles.cache.map(role => role.toString()).join(', ')}`)
+            .setDescription(`**Username**: ${user.username}\n**Joined Server**: ${memberTarget.joinedAt}\n**Joined Discord**: ${user.createdAt}\n**Roles**: ${memberTarget.roles.cache.map(role => role.toString()).join(', ')}`)
             .setThumbnail(user.displayAvatarURL({forceStatic: false, size: 512}))
         return await interaction.reply({
             embeds: [embed],

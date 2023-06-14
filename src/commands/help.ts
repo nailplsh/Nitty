@@ -20,7 +20,8 @@ module.exports = {
 
 
         return interaction.reply({
-            embeds: [embed]
+            embeds: [embed],
+            ephemeral: true
         });
     }
 }

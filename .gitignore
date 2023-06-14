@@ -5,3 +5,7 @@ config.json
 package-lock.json
 *.env
 **/.env
+
+
+# Ignnoring .idea and .code folders
+.idea

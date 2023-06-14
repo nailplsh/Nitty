@@ -1,10 +1,30 @@
-import {CommandInteraction, SlashCommandBuilder} from 'discord.js';
+import { SlashCommandBuilder, EmbedBuilder, CommandInteraction } from "discord.js";
+
 
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('ren')
-        .setDescription('Infromation related to renvtube.'),
+        .setDescription('Sends information about Ren.'),
+
+
     async execute(interaction: CommandInteraction) {
-        await interaction.reply({ content: 'Ren - VTuber - 🎮 - https://twitch.tv/renvtube', ephemeral: true });
-    },
-};
+
+        const embed = new EmbedBuilder()
+            .setTitle('Ren')
+            .setURL("https://twitch.tv/renvtube")
+            .setColor('#b3005a')
+            .setDescription(`Ren is an associated content creator.
+            \n**Creator Info**:
+            Oshi Mark: 🎮
+            Timezone: America/Toronto (ET)
+            \n**My Links**:
+            Twitter: https://twitter.com/RenRen031917
+            Twitch: https://twitch.tv/renvtuber
+            **Discord**: RenVT#5565`)
+            .setThumbnail(`https://raw.githubusercontent.com/nitwithazel/Nitty/master/images/ren.png`)
+
+        return await interaction.reply({
+            embeds: [embed],
+        })
+    }
+}

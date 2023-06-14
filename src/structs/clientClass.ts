@@ -1,4 +1,4 @@
-import {Collection, REST} from 'discord.js';
+import {Collection, GatewayIntentBits, REST} from 'discord.js';
 import { Client as DiscordClient, Collection as DiscordCollection, Routes as DiscordRoutes } from 'discord.js';
 
 import Command from './command';
@@ -10,7 +10,7 @@ export default class ClientClass extends DiscordClient{
     commands: Collection<string, Command>;
     events: Collection<string, Event>;
 
-    constructor(intents: { intents: any[] }) {
+    constructor(intents: { intents: GatewayIntentBits[] }) {
         super({ // defining the client with the intents
             intents: intents.intents
         });
@@ -47,6 +47,7 @@ export default class ClientClass extends DiscordClient{
         const eventFiles = readdirSync(eventsPath).filter(file => file.endsWith('.ts'));
 
         for (const filePath of eventFiles) {
+            // eslint-disable-next-line @typescript-eslint/no-var-requires
             const loadedEvent = require(join(eventsPath, filePath));
             const eventFileName = filePath.split('/').pop()?.split('.')[0] ?? '';
             if (!eventFileName) continue;
@@ -66,6 +67,7 @@ export default class ClientClass extends DiscordClient{
 
 
         for (const filePath of commandFiles) {
+            // eslint-disable-next-line @typescript-eslint/no-var-requires
             const loadedCommand = require(join(commandsPath, filePath));
 
             if (!(loadedCommand.data && loadedCommand.execute))
@@ -79,7 +81,7 @@ export default class ClientClass extends DiscordClient{
 
     async updateCommands(TOKEN: string): Promise<void> {
         const DC_REST = new REST({ version: '9' }).setToken(TOKEN);
-        let commandsJSON = this.commands.map(command => command.data.toJSON());
+        const commandsJSON = this.commands.map(command => command.data.toJSON());
         await DC_REST.put(
             DiscordRoutes.applicationCommands(this?.user?.id ?? ''),
             { body: commandsJSON }

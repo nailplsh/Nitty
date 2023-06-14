@@ -5,6 +5,6 @@ module.exports = {
         .setName('hello')
         .setDescription('Hello!'),
     async execute(interaction: CommandInteraction) {
-        await interaction.reply({ content: 'Hello there! I am Nitty, Hazel\'s utility bot.', ephemeral: true });
+        await interaction.reply({ content: 'Hello there! I am Nitty, Nitwit\'s utility bot.', ephemeral: true });
     },
 };

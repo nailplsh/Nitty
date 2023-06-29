@@ -9,3 +9,4 @@ package-lock.json
 
 # Ignnoring .idea and .code folders
 .idea
+*.tgz

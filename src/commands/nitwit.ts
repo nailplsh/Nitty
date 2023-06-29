@@ -27,7 +27,7 @@ module.exports = {
             \n**My Links**:
             Twitter: https://twitter.com/techynitwit
             Twitch: https://twitch.tv/nitwithazel
-            VStream: https://vstream.com/c/@hazel
+            VStream: https://vstream.com/c/@nitwit
             Other Links: https://techynitwit.carrd.co
             \n**Github Stats**:
             Public repos: ${githubInfos.public_repos}

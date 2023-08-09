@@ -19,21 +19,21 @@ module.exports = {
             .setTitle('Nitwit')
             .setURL("https://github.com/nitwithazel")
             .setColor('#a8715a')
-            .setDescription(`Nitwit is a content creator and programmer, and is the original creator of this Bot.
+            .setDescription(`Nitwit is a content creator, a programmer, and the original creator of this Bot.
             \n**Creator Info**:
             Fandom Name: Nitwits
             Oshi Mark: 🌰😂🌰
             Timezone: America/Toronto (ET)
             \n**My Links**:
             Twitter: https://twitter.com/techynitwit
-            Twitch: https://twitch.tv/nitwithazel
+            Twitch: https://twitch.tv/techynitwit
             VStream: https://vstream.com/c/@nitwit
-            Other Links: https://techynitwit.carrd.co
+            Other Links: https://nitwit.site
             \n**Github Stats**:
             Public repos: ${githubInfos.public_repos}
             Followers: ${githubInfos.followers}
             \n**Github**: https://github.com/nitwithazel
-            **Discord**: nit.wit (old: nitwit#0001)`)
+            **Discord**: nit.wit`)
             .setThumbnail(`https://avatars.githubusercontent.com/u/${githubInfos.id}?v=4`)
 
         return await interaction.reply({

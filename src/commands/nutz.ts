@@ -20,7 +20,7 @@ module.exports = {
             \n**Our Links**:
             YouTube: https://youtube.com/@mixednutz
             Instagram: https://instagram.com/mixe.dnutz
-            Other Info: https://mixednutz.carrd.co`)
+            Other Info: https://nutz.crd.co`)
             .setThumbnail(`https://raw.githubusercontent.com/nitwithazel/Nitty/master/images/mixednutz.png`)
 
         return await interaction.reply({

@@ -33,7 +33,7 @@ module.exports = {
             Public repos: ${githubInfos.public_repos}
             Followers: ${githubInfos.followers}
             \n**Github**: https://github.com/nitwithazel
-            **Discord**: nit.wit`)
+            **Discord**: ntwt`)
             .setThumbnail(`https://avatars.githubusercontent.com/u/${githubInfos.id}?v=4`)
 
         return await interaction.reply({

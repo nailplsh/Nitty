@@ -18,7 +18,7 @@ module.exports = {
             Timezone: America/Toronto (ET)
             \n**My Links**:
             Twitch: https://twitch.tv/cash3wsarenice9982
-            **Discord**: cashewsarenice#2700`)
+            **Discord**: .cashewsarenice`)
             //.setThumbnail(`https://raw.githubusercontent.com/nitwithazel/Nitty/master/images/ren.png`)
 
         return await interaction.reply({

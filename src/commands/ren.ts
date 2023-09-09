@@ -20,7 +20,7 @@ module.exports = {
             \n**My Links**:
             Twitter: https://twitter.com/RenRen031917
             Twitch: https://twitch.tv/renvtuber
-            **Discord**: RenVT#5565`)
+            **Discord**: renvt`)
             .setThumbnail(`https://raw.githubusercontent.com/nitwithazel/Nitty/master/images/ren.png`)
 
         return await interaction.reply({

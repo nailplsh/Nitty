@@ -10,7 +10,7 @@ module.exports = {
         const user = interaction.options.getUser('target');
 
         const embed = new EmbedBuilder()
-            .setTitle(`Avatar of **${user ? user.tag : interaction.user.tag}**`)
+            .setTitle(`Avatar of **${user ? user.username : interaction.user.username}**`)
             .setColor(0x00AE86)
             .setImage(user ? user.displayAvatarURL({ forceStatic: false }) : interaction.user.displayAvatarURL())
             .setTimestamp()

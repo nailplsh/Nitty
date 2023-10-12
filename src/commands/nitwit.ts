@@ -19,7 +19,7 @@ module.exports = {
             .setTitle('Nitwit')
             .setURL("https://github.com/nitwithazel")
             .setColor('#a8715a')
-            .setDescription(`Nitwit is a content creator, a programmer, and the original creator of this Bot.
+            .setDescription(`Nitwit is a content creator and programmer, and the original creator of this Bot.
             \n**Creator Info**:
             Fandom Name: Nitwits
             Oshi Mark: 🌰😂🌰
@@ -27,7 +27,6 @@ module.exports = {
             \n**My Links**:
             Twitter: https://twitter.com/techynitwit
             Twitch: https://twitch.tv/techynitwit
-            VStream: https://vstream.com/c/@nitwit
             Other Links: https://nitwit.site
             \n**Github Stats**:
             Public repos: ${githubInfos.public_repos}
